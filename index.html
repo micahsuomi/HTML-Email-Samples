@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netflix Email</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+        font-size: 65.2%;
+    }
+
+    
+    @media(max-width: 1250px) {
+    html {
+        font-size: 56%;
+    }  
+}
+
+    @media(max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+    @media(max-width: 500px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+        body {
+        font-family: 'Arial', sans-serif;
+
+    }
+
+    :root {
+        --font-size-big: 1.9rem;
+        --font-size-medium: 1.7rem;
+        --font-size-small: 1.5rem;
+        --font-size-smaller: 1.2rem;
+        --color-grey-light: rgb(240, 234, 234);
+        --color-black: rgb(73, 60, 60);
+        --color-red: rgb(229, 9, 20);
+
+
+    }
+
+    .container {
+        background-color: var(--color-black);
+        padding: 4rem 30rem;
+    }
+
+    @media(max-width: 1024px) {
+        .container {
+            padding: 1rem;
+        }       
+    }
+
+    .body-container {
+        background-color: #fff;
+        padding: 2rem 2rem;
+    }
+
+    .header-heading {
+        text-align: center;
+    }
+
+    .nlogo {
+        width: 24%;
+    }
+    .now-on {
+        display: block;
+        text-transform: uppercase;
+        font-size: var(--font-size-medium);
+    }
+
+    .heading-images {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    @media(max-width: 1024px) {
+        .heading-images {
+            justify-content: center;
+        }
+
+        .heading-image {
+            width: 31%;
+            margin: .6rem;
+        }
+    }
+
+    .heading-image {
+        border-radius: 5px;
+    }
+
+.movie-header {
+    margin-top: var(--header-margin-top);
+}
+    .movies-wrapper {
+        display: grid;
+        grid-template-rows: repeat(min-content 2, 1fr);
+        padding: 0 2rem;
+        border-radius: 5px;
+    }
+
+    .movies-top {
+        text-align: center;
+    }
+
+    .movies-top img {
+        width: 100%;
+    }
+    .movie-header {
+        font-size: var(--font-size-medium);
+        margin: 1.3rem 0;
+    }
+
+    .year-header {
+        font-weight: 400;
+        font-size: var(--font-size-small);
+    }
+    .movies-body {
+        background-color: var(--color-grey-light);
+        padding: 2rem;
+        margin-top: -.2rem;
+    }
+
+    .movie-paragraph {
+        font-size: var(--font-size-small);
+        margin-top: 1rem;
+    }
+
+    .buttons-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .btn-movie {
+        padding: 1.7rem;
+        width: 17rem;
+        font-weight: 700;
+        margin: 1rem 1rem;
+    }
+
+    .btn-play {
+        background-color: var(--color-red);
+        border: none;
+        color: #fff;
+    }
+
+    .btn-mylist {
+        background-color: #fff;
+        color: var(--color-black);
+        border: solid 1px var(--color-black);
+    }
+
+    .continue {
+        text-align: center;
+    }
+
+    .bottom-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .arrow-text {
+        color: var(--color-red);
+        margin-left: 1rem;
+    }
+    .email-footer {
+        color: #fff;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;    
+        list-style: none;
+        opacity: .9;
+        margin-top: .7rem;
+    }
+
+    .footer-paragraph {
+        font-size: var(--font-size-smaller);
+        color: #fff;
+        opacity:.6;
+        margin-top: 1rem;
+        
+    }
+
+    .footer-link {
+        margin-top: 1rem;
+    }
+    .footer-link a {
+        font-size: var(--font-size-smaller);
+        margin: 1.7rem 1rem;
+        color: #fff;
+        opacity: .6;
+    }
+
+    .netflix-footer-logo {
+        width: 4%;
+        margin-top: 1.5rem;
+    }
+        </style>
+    
+</body>
+
+    <div class="container">
+        <div class="body-container">
+        <div class="header">
+            <div class="header-heading">
+                <h3 class="now-on">Now on</h3>
+                <a href="https://fontmeme.com/netflix-font/"><img src="https://fontmeme.com/permalink/190714/5e22bdf76bf747ae2440439a54547317.png" alt="netflix-font" class="nlogo"></a>
+                <h3 class="movie-header">Popular on Noirflix</h3>
+                <div class="heading-images">
+                    <img src="otherhood.jpg" alt="" class="heading-image">
+                    <img src="money.jpg" alt="" class="heading-image">
+                    <img src="dearwhite.jpg" alt="" class="heading-image">
+
+                </div>
+            </div>
+            <div class="movies-wrapper">
+                <div class="movies-top">
+                        <h3 class="movie-header">Top Films For You</h3>
+                        <img src="hack.jpg" alt="">
+                </div>
+               <div class="movies-body">
+                <h3 class="movie-header">The Great Hack</h3>
+                <h4 class="year-header">2019</h4>
+                <p class="movie-paragraph">Explore how a data company named Cambridge Analytica came to symbolize the dark side of social media in the wake of the 2016 U.S. presidential election.</p>
+                <div class="buttons-container">
+                    <button class="btn-movie btn-play"><i class="fas fa-play"></i> Play</button>
+                    <button class="btn-movie btn-mylist"><i class="fas fa-plus"></i> My List</button>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="movies-wrapper">
+                    <div class="movies-top">
+                            <h3 class="movie-header">Top Films For You</h3>
+                            <img src="chef.jpg" alt="">
+                    </div>
+                   <div class="movies-body">
+                    <h3 class="movie-header">Chef</h3>
+                    <h4 class="year-header">2014</h4>
+                    <p class="movie-paragraph">After igniting a Twitter war with a well-known culinary critic, a Los Angeles chef packs his knives, heads home to Miami and opens a food truck.</p>
+                    <div class="buttons-container">
+                        <button class="btn-movie btn-play"><i class="fas fa-play"></i> Play</button>
+                        <button class="btn-movie btn-mylist"><i class="fas fa-plus"></i> My List</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="movies-wrapper">
+                        <div class="movies-top">
+                                <h3 class="movie-header">Top Films For You</h3>
+                                <img src="rainmaker.jpg" alt="">
+                        </div>
+                       <div class="movies-body">
+                        <h3 class="movie-header">The Rainmaker</h3>
+                        <h4 class="year-header">1997</h4>
+                        <p class="movie-paragraph">A young attorney and a scrappy paralegal work to help the parents of a terminally ill boy in their suit against an insurance company.</p>
+                        <div class="buttons-container">
+                            <button class="btn-movie btn-play"><i class="fas fa-play"></i> Play</button>
+                            <button class="btn-movie btn-mylist"><i class="fas fa-plus"></i> My List</button>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="movie-header continue">Continue Watching</h3>
+                    <div class="heading-images">
+                        <img src="orange.jpg" alt="" class="heading-image">
+                        <img src="willy.jpg" alt="" class="heading-image">
+                        <img src="peppa.jpg" alt="" class="heading-image">
+    
+                    </div>
+                    <div class="bottom-text-container">
+                    <h3 class="continue">View All TV Programmes & Films</h3>
+                    <i class="fas fa-arrow-circle-right fa-2x arrow-text"></i>
+                </div>
+                </div>
+
+                    <footer class="email-footer">
+                        <p class="footer-paragraph">Questions? Call 0800 915 561</p>
+                        <p class="footer-paragraph">‪Netflix International B.V.‬</p>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="#">Unsuscribe</a></li>
+                            <li class="footer-link"><a href="#">Terms of Use</a></li>
+                            <li class="footer-link"><a href="#">Privacy</a></li>
+                            <li class="footer-link"><a href="#">Help Centre</a></li>
+                        </ul>
+                        <p class="footer-paragraph">This message was emailed to [michele.zucca81@gmail.com] by Netflix as part of your Netflix membership.</p>
+                        <img src="nlogo.png" alt="netflix" class="netflix-footer-logo">
+
+
+
+
+                    </footer>
+
+                
+    
+                
+        </div>
+    </div>
+</html>
